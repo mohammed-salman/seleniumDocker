@@ -13,12 +13,14 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.PageFactory;
 
+import java.net.MalformedURLException;
+
 public class Hooks extends BasePage {
 
 
 
     @Before
-    public void setUp() {
+    public void setUp() throws MalformedURLException, InterruptedException {
 
         BasePage.initilization();
         //Setting system properties of ChromeDriver
